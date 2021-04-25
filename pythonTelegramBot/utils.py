@@ -64,6 +64,6 @@ class CryptoConverter:
 
         total_base = float(json.loads(r.content)['rates'][quote]) * amount
 
-        if base == 'RUB': total_base = float(json.loads(r.content)['rates'][quote]) * 0.5 * amount
+        if base == 'RUB': total_base = float(json.loads(r.content)['rates'][quote]) * 0.010743802 * amount
 
         return round(total_base, 2)
